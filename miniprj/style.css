@@ -1,0 +1,109 @@
+body {
+    background-image: url('mainbg.png');
+    background-color: #f2dac0;
+    background-repeat: no-repeat; 
+    background-attachment:scroll;
+    height: 200vh;
+ 
+    }
+    .container {
+    margin: 5px;
+    padding: 10px;
+    
+    flex-direction: column;
+    }
+   
+    header{
+        
+        gap: 5rem;
+    }
+    .heading{
+        height: 100px;
+
+        flex-direction: column;
+        display:flex;
+        margin-top: 5px;
+    width: 1250px;
+    border-radius: 10px;
+    margin-left: 220px;
+    text-align: center;
+    color: rgb(244, 248, 255);
+    background:#b78789;
+    }
+
+    #hd1{
+        font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+        font-size: 30px;
+    }
+
+    #hd2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+    .nav-menu {
+    display: flex;
+    margin-top: 130px;
+    justify-content: space-between; 
+    margin-bottom: 25%;
+    position: absolute;
+    right: 10%;
+    top: 10px; 
+    box-sizing: border-box;
+    border-radius: 40px;
+    }
+    .nav-menu a {
+    margin-top: 100%;
+    text-decoration: none;
+    color: #3e4e7e;
+    margin-right: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    transition: background-color 0.3s, color 0.3s;
+    background:#b78789 ;
+    }
+    .nav-menu a:hover {
+    color:#263752;
+    background-color: #8d6466;
+    }
+    .main-content {
+    display: flex;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction:column;
+    /*gap: 6rem;*/
+    }
+
+   
+    
+    .important-notice {
+   
+   
+    text-align: center;
+    
+    background: #95849e;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    margin-top: 550px;
+    width: 1000px;
+    box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+    .main-content {
+    flex-direction: column;
+    align-items: center;
+    }
+    .important-notice {
+    margin-bottom: 20px;
+    width: 100%; 
+    }
+    .nav-menu {
+    right: 20%; 
+    justify-content: center; 
+    }
+}
